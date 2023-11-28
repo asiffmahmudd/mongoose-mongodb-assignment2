@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 import { TUser, TFullName, TAddress, UserModel } from "./user.interface";
 import bcrypt from "bcrypt";
-import config from "../config";
+import config from "../../config";
 
 const fullNameSchema = new Schema<TFullName>({
   firstName: {
